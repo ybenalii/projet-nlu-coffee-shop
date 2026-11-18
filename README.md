@@ -25,6 +25,7 @@ Conventions, tuning, results and limits: [donnees/NOTES.md](donnees/NOTES.md).
 | 60 | 8 % | 8 % |
 | 100 | 42 % | 25 % |
 | 150 | 67 % | 38 % |
+| 250 | 83 % | 58 % |
 
 | 30 steps | 150 steps |
 | --- | --- |
@@ -34,6 +35,17 @@ Validation predictions at 30 steps (the model repeats the input) and at 100 step
 
 ![predictions 30 steps](docs/predictions_30_part1.png)
 ![predictions 100 steps](docs/predictions_100.png)
+
+## Test results (250 steps)
+
+| | LoRA | base | base+prompt |
+| --- | --- | --- | --- |
+| intent_acc | 67 % | 0 % | 0 % |
+| slot_f1 | 68 % | 17 % | 9 % |
+| exact | 46 % | 0 % | 0 % |
+
+Gate: FAIL (intent_acc 67 % for a 70 % threshold; margin over base+prompt +67 points, 30 required).
+
 
 ## Run
 
