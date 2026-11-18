@@ -1,0 +1,15 @@
+phrase;reponse
+allume la lumière du salon;light_on | room=salon
+allume la cuisine;light_on | room=cuisine
+éteins la lumière du salon;light_off | room=salon
+éteins tout;light_off
+mets la lumière du salon à cinquante pour cent;light_set | room=salon | level=cinquante pour cent
+règle la lumière de la chambre à trente pour cent;light_set | room=chambre | level=trente pour cent
+ouvre les volets;shutter_open
+ouvre les volets du salon;shutter_open | room=salon
+ferme les volets;shutter_close
+ferme les volets du salon;shutter_close | room=salon
+mets le chauffage à vingt degrés;temperature_set | temperature=vingt degrés
+règle la température du salon à vingt et un degrés;temperature_set | room=salon | temperature=vingt et un degrés
+quelle température fait-il dans le salon;temperature_query | room=salon
+il fait combien dans la chambre;temperature_query | room=chambre

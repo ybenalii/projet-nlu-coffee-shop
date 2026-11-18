@@ -1,0 +1,25 @@
+phrase;reponse
+un latte à emporter s'il vous plaît;order_coffee | item=latte | service=à emporter
+deux expressos;order_coffee | item=expressos | quantity=deux
+un cappuccino au lait de soja;order_coffee | item=cappuccino | milk=soja
+un thé vert glacé;order_tea | item=thé vert glacé
+un grand chaï latte;order_tea | item=chaï latte | size=grand
+une verveine sur place;order_tea | item=verveine | service=sur place
+un chocolat chaud à emporter;order_other_drink | item=chocolat chaud | service=à emporter
+un smoothie banane;order_other_drink | item=smoothie banane
+deux jus d'orange;order_other_drink | item=jus d'orange | quantity=deux
+un pain au raisin;order_food | item=pain au raisin
+deux cookies à emporter;order_food | item=cookies | quantity=deux | service=à emporter
+une part de tarte aux pommes;order_food | item=part de tarte aux pommes
+mettez-le plutôt en petit;modify_order | size=petit
+changez pour du lait d'amande;modify_order | milk=amande
+finalement on le prend à emporter;modify_order | service=à emporter
+annulez le muffin;cancel_order | item=muffin
+je ne prends plus rien merci;cancel_order
+retirez le thé;cancel_order | item=thé
+je voudrais payer;pay
+vous prenez la carte;pay
+on règle ensemble;pay
+vous avez du lait de soja;menu_question | milk=soja
+le cookie est à combien;menu_question | item=cookie
+le cheesecake contient des oeufs;menu_question | item=cheesecake

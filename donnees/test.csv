@@ -1,0 +1,25 @@
+phrase;reponse
+un macchiato s'il vous plaît;order_coffee | item=macchiato
+un grand cappuccino avoine;order_coffee | item=cappuccino | size=grand | milk=avoine
+deux allongés sur place;order_coffee | item=allongés | quantity=deux | service=sur place
+un thé oolong;order_tea | item=thé oolong
+deux matchas à emporter;order_tea | item=matchas | quantity=deux | service=à emporter
+un chaï latte au lait d'amande;order_tea | item=chaï latte | milk=amande
+un chocolat blanc;order_other_drink | item=chocolat blanc
+une orangeade bien fraîche;order_other_drink | item=orangeade | extra=bien fraîche
+un petit smoothie kiwi;order_other_drink | item=smoothie kiwi | size=petit
+une gaufre au sucre;order_food | item=gaufre au sucre
+un croissant aux amandes à emporter;order_food | item=croissant aux amandes | service=à emporter
+trois financiers;order_food | item=financiers | quantity=trois
+faites-le en xl finalement;modify_order | size=xl
+ajoutez un sirop caramel;modify_order | extra=sirop caramel
+remplacez le thé par une infusion;modify_order | item=infusion
+oubliez le bagel;cancel_order | item=bagel
+on annule la commande;cancel_order
+plus de smoothie pour moi;cancel_order | item=smoothie
+je peux régler par apple pay;pay
+ça fera combien;pay
+je paie par chèque;pay
+le brownie est sans gluten;menu_question | item=brownie
+vous avez de la chantilly;menu_question | extra=chantilly
+combien coûte un matcha;menu_question | item=matcha

@@ -1,0 +1,20 @@
+# Exemple : l'ontologie de la domotique, la liste FERMÉE des étiquettes que le modèle doit utiliser.
+# Format d'une réponse :  <intention> | <slot>=<valeur> | <slot>=<valeur>
+# La valeur d'un slot est recopiée de la phrase, en minuscules, sans article (« le salon » -> salon).
+
+domaine: les commandes vocales d'une maison connectée (lumières, volets, chauffage)
+
+intentions:
+  light_on: allumer une ou plusieurs lumières
+  light_off: éteindre une ou plusieurs lumières
+  light_set: régler l'intensité d'une lumière (un pourcentage, le maximum, le minimum)
+  shutter_open: ouvrir ou remonter des volets ou des stores
+  shutter_close: fermer ou descendre des volets ou des stores
+  temperature_set: régler la température (chauffage, thermostat)
+  temperature_query: demander la température qu'il fait
+
+slots:
+  room: la pièce concernée (salon, cuisine, chambre, bureau, salle de bain, entrée, garage...)
+  level: un niveau d'intensité ou d'ouverture (trente pour cent, maximum, minimum, moitié)
+  temperature: une température de consigne (vingt degrés)
+  time: une heure ou un moment (sept heures, ce soir, demain matin)

@@ -1,0 +1,121 @@
+phrase;reponse
+un grand latte avoine à emporter;order_coffee | item=latte | size=grand | milk=avoine | service=à emporter
+deux noisettes s'il vous plaît;order_coffee | item=noisettes | quantity=deux
+un expresso serré;order_coffee | item=expresso | extra=serré
+je vais prendre un cappuccino sur place;order_coffee | item=cappuccino | service=sur place
+un iced latte vanille;order_coffee | item=iced latte | extra=vanille
+un allongé bien chaud;order_coffee | item=allongé | extra=bien chaud
+un flat white lait d'amande;order_coffee | item=flat white | milk=amande
+un déca;order_coffee | item=déca
+trois cafés à emporter;order_coffee | item=cafés | quantity=trois | service=à emporter
+un petit crème;order_coffee | item=crème | size=petit
+un mocha avec chantilly;order_coffee | item=mocha | extra=chantilly
+un double expresso sans sucre;order_coffee | item=double expresso | extra=sans sucre
+je voudrais un latte macchiato soja;order_coffee | item=latte macchiato | milk=soja
+un cortado pour moi;order_coffee | item=cortado
+deux grands americanos glacés;order_coffee | item=americanos | quantity=deux | size=grands | extra=glacés
+un thé vert à emporter;order_tea | item=thé vert | service=à emporter
+un chaï latte avoine;order_tea | item=chaï latte | milk=avoine
+un matcha latte en grand;order_tea | item=matcha latte | size=grand
+une infusion verveine;order_tea | item=infusion verveine
+deux earl grey;order_tea | item=earl grey | quantity=deux
+un thé glacé pêche;order_tea | item=thé glacé pêche
+je prendrai un rooibos sur place;order_tea | item=rooibos | service=sur place
+un thé à la menthe bien sucré;order_tea | item=thé à la menthe | extra=bien sucré
+un matcha glacé au lait de coco;order_tea | item=matcha glacé | milk=coco
+une camomille s'il vous plaît;order_tea | item=camomille
+un petit thé noir;order_tea | item=thé noir | size=petit
+un chaï épicé à emporter;order_tea | item=chaï épicé | service=à emporter
+trois tisanes;order_tea | item=tisanes | quantity=trois
+un thé au jasmin avec du miel;order_tea | item=thé au jasmin | extra=miel
+un grand thé noir nature;order_tea | item=thé noir | size=grand
+un chocolat chaud avec chantilly;order_other_drink | item=chocolat chaud | extra=chantilly
+un jus d'orange pressé;order_other_drink | item=jus d'orange pressé
+un smoothie fraise banane à emporter;order_other_drink | item=smoothie fraise banane | service=à emporter
+deux limonades maison;order_other_drink | item=limonades maison | quantity=deux
+un grand chocolat au lait d'avoine;order_other_drink | item=chocolat | size=grand | milk=avoine
+une bouteille d'eau;order_other_drink | item=bouteille d'eau
+un milkshake vanille;order_other_drink | item=milkshake vanille
+un jus de pomme sur place;order_other_drink | item=jus de pomme | service=sur place
+un chocolat viennois;order_other_drink | item=chocolat viennois
+trois sodas;order_other_drink | item=sodas | quantity=trois
+un petit jus détox;order_other_drink | item=jus détox | size=petit
+un lait chaud au miel pour la petite;order_other_drink | item=lait chaud | extra=miel
+une citronnade sans sucre;order_other_drink | item=citronnade | extra=sans sucre
+un smoothie mangue;order_other_drink | item=smoothie mangue
+une eau pétillante;order_other_drink | item=eau pétillante
+un croissant;order_food | item=croissant
+deux pains au chocolat à emporter;order_food | item=pains au chocolat | quantity=deux | service=à emporter
+un cookie aux pépites de chocolat;order_food | item=cookie aux pépites de chocolat
+je vais prendre un muffin myrtille;order_food | item=muffin myrtille
+un sandwich poulet crudités sur place;order_food | item=sandwich poulet crudités | service=sur place
+une part de cheesecake;order_food | item=part de cheesecake
+trois cookies;order_food | item=cookies | quantity=trois
+un banana bread réchauffé;order_food | item=banana bread | extra=réchauffé
+un bagel saumon;order_food | item=bagel saumon
+une tranche de cake citron;order_food | item=tranche de cake citron
+un brownie avec de la chantilly;order_food | item=brownie | extra=chantilly
+un croque-monsieur bien chaud;order_food | item=croque-monsieur | extra=bien chaud
+une salade de fruits à emporter;order_food | item=salade de fruits | service=à emporter
+deux madeleines;order_food | item=madeleines | quantity=deux
+un panini mozzarella;order_food | item=panini mozzarella
+finalement mettez-le en grand;modify_order | size=grand
+vous pouvez changer pour du lait d'avoine;modify_order | milk=avoine
+en fait ce sera à emporter;modify_order | service=à emporter
+rajoutez un shot en plus sur mon latte;modify_order | item=latte | extra=shot en plus
+je préfère un petit plutôt;modify_order | size=petit
+remplacez le croissant par un pain au chocolat;modify_order | item=pain au chocolat
+mettez-en deux au lieu d'un;modify_order | quantity=deux
+pouvez-vous le faire sans sucre finalement;modify_order | extra=sans sucre
+on reste sur place en fait;modify_order | service=sur place
+changez mon cappuccino en déca;modify_order | item=déca
+du soja à la place du lait normal;modify_order | milk=soja
+ajoutez de la chantilly sur le chocolat;modify_order | item=chocolat | extra=chantilly
+en version glacée plutôt;modify_order | extra=glacée
+passez-le en moyen svp;modify_order | size=moyen
+finalement trois cookies au lieu de deux;modify_order | item=cookies | quantity=trois
+laissez tomber le cookie;cancel_order | item=cookie
+annulez ma commande;cancel_order
+finalement je ne prends pas le latte;cancel_order | item=latte
+oubliez le deuxième croissant;cancel_order | item=croissant
+en fait non je ne veux plus rien;cancel_order
+retirez le smoothie s'il vous plaît;cancel_order | item=smoothie
+annulez les deux muffins;cancel_order | item=muffins | quantity=deux
+je change d'avis pas de thé;cancel_order | item=thé
+enlevez le jus d'orange;cancel_order | item=jus d'orange
+stop on annule tout;cancel_order
+je ne veux plus le sandwich;cancel_order | item=sandwich
+supprimez le chocolat chaud de la commande;cancel_order | item=chocolat chaud
+c'est bon pas de dessert finalement;cancel_order | item=dessert
+annulez le cappuccino à emporter;cancel_order | item=cappuccino | service=à emporter
+désolé je dois partir annulez;cancel_order
+je peux payer par carte;pay
+l'addition s'il vous plaît;pay
+on peut régler en espèces;pay
+c'est combien au total;pay
+je paie avec mon téléphone;pay
+vous prenez les tickets resto;pay
+je vous dois combien;pay
+on paie séparément;pay
+encaissez-moi s'il vous plaît;pay
+je règle tout de suite;pay
+vous acceptez le sans contact;pay
+je peux avoir un reçu;pay
+ça fait combien en tout;pay
+je paie en liquide;pay
+la carte passe en dessous de cinq euros;pay
+vous avez du lait d'avoine;menu_question | milk=avoine
+c'est combien le cookie;menu_question | item=cookie
+le muffin contient des noix;menu_question | item=muffin
+qu'est-ce que vous avez comme thés;menu_question | item=thés
+il y a du gluten dans le banana bread;menu_question | item=banana bread
+le chaï latte est épicé;menu_question | item=chaï latte
+vous faites des boissons sans lactose;menu_question | milk=sans lactose
+quel est le prix d'un grand latte;menu_question | item=latte | size=grand
+vous avez des options vegan;menu_question
+le chocolat chaud est fait avec quel lait;menu_question | item=chocolat chaud
+c'est quoi un flat white;menu_question | item=flat white
+vous avez du déca;menu_question | item=déca
+les sandwichs sont faits maison;menu_question | item=sandwichs
+quelles tailles proposez-vous;menu_question
+vous avez du sirop sans sucre;menu_question | extra=sirop sans sucre
