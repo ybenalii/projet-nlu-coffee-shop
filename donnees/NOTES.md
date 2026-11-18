@@ -28,14 +28,18 @@ Handwritten sentences, no personal data.
 
 ## Tuning (validation set)
 
-| max_steps | val_intent_acc | val_exact | best_val_loss |
-| --- | --- | --- | --- |
-| 30 | | | |
-| 60 | | | |
-| 100 | | | |
-| 150 | | | |
+| max_steps | val_intent_acc | val_slot_f1 | val_exact | best_val_loss |
+| --- | --- | --- | --- | --- |
+| 30 | 0 % | 17 % | 0 % | 3.20 |
+| 60 | 8 % | 40 % | 8 % | 2.21 |
+| 100 | 42 % | 51 % | 25 % | 1.54 |
+| 150 | 67 % | 71 % | 38 % | 1.28 |
+
+Scores are still rising at 150 steps (only 2.5 passes over the 120 training sentences), so longer runs are tested before reading the test set. The best checkpoint on the validation set is kept, so more steps cannot make the selected model worse on validation.
 
 Selected: … steps.
+
+Observations on the validation predictions: at 30 steps the model mostly repeats the sentence instead of answering with a label. At 100 steps it often falls back on order_food and sometimes invents labels outside the ontology (order_juice, "modify | milk | almond").
 
 No work on the system prompt: the base+prompt column uses the prompt generated from the ontology.
 

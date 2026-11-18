@@ -14,9 +14,26 @@ c'est combien le cookie
 
 ## Data
 
-![make valider](docs/valider.png)
 
 Conventions, tuning, results and limits: [donnees/NOTES.md](donnees/NOTES.md).
+
+## Tuning on the validation set
+
+| max_steps | val_intent_acc | val_exact |
+| --- | --- | --- |
+| 30 | 0 % | 0 % |
+| 60 | 8 % | 8 % |
+| 100 | 42 % | 25 % |
+| 150 | 67 % | 38 % |
+
+| 30 steps | 150 steps |
+| --- | --- |
+| ![run 30](docs/run_30.png) | ![run 150](docs/run_150.png) |
+
+Validation predictions at 30 steps (the model repeats the input) and at 100 steps (wrong intents, invented labels):
+
+![predictions 30 steps](docs/predictions_30_part1.png)
+![predictions 100 steps](docs/predictions_100.png)
 
 ## Run
 
